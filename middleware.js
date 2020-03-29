@@ -4,8 +4,6 @@ module.exports = (req, res, next) => {
   
   const db = req.app.db;
 
-  db.defaults({ todos: [], accounts: []}).write();
-
   if (req.method === 'GET' && req.path === '/login') {
     return res.sendFile(`${__dirname}/index.html`);
   }

@@ -70,6 +70,13 @@ module.exports = (req, res, next) => {
     return res.sendStatus(204);
   }
 
+  if (req.method === 'POST' && req.path === '/todos/seed') {
+    
+    db.set('todos', req.body).write();
+
+    return res.sendStatus(201);
+  }
+
   if (req.method === 'DELETE' && req.path === '/accounts') {
     db.set('accounts', []).write();
 

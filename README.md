@@ -23,6 +23,9 @@ Backend is a json-server on a static json file. Middleware handles couple of cas
 ### POST /reset
 Deletes all todos and all accounts, that were created on signup page.
 
+### POST /todos/seed
+Seed an array of todos
+
 ### DELETE /todos
 Deletes all todos
 

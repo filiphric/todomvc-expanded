@@ -6,7 +6,9 @@
     "start": "npx ./node_modules/.bin/json-server --static . data.json -m middleware.js --config json-server.json"
   },
   "devDependencies": {
+    "cypress": "^4.9.0",
     "json-server": "0.15.1",
     "sendmail": "^1.6.1"
-  }
+  },
+  "dependencies": {}
 }
